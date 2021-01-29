@@ -45,22 +45,21 @@ const Pokemones = () => {
               Get Pokemones
             </button>
           )}
-
-          {next && (
-            <button
-              className='btn btn-sm btn-dark mr-3'
-              onClick={() => dispatch(siguientesPokemonesAccion())}
-            >
-              Siguiente
-            </button>
-          )}
-
           {previous && (
             <button
-              className='btn btn-sm btn-dark'
+              className='btn btn-sm btn-dark mr-3'
               onClick={() => dispatch(retrocederPokemonesAccion())}
             >
               Retroceder
+            </button>
+          )}
+
+          {next && (
+            <button
+              className='btn btn-sm btn-dark'
+              onClick={() => dispatch(siguientesPokemonesAccion())}
+            >
+              Siguiente
             </button>
           )}
         </div>
